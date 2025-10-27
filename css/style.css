@@ -9,6 +9,8 @@
 body {
   background-color: #110f14;
   font-family: "Oswald", "san-serif";
+  width: 90%;
+  overflow-x: hidden;
 }
 /* =====HEADER===== */
 #header {
