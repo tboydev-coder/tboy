@@ -5,11 +5,15 @@
   padding: 0;
   margin: 0;
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   background-color: #110f14;
-  font-family: "Oswald", sans-serif;
-  padding: 0 5%;
+  font-family: "Oswald", "san-serif";
   overflow-x: hidden;
 }
 /* =====HEADER===== */
@@ -17,7 +21,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 15px 20px;
   border-bottom: 2px solid #b31afa;
   box-shadow: 0px 0px 15px #b923ff;
   color: #fff;
@@ -78,7 +82,7 @@ body {
 
 /* =====ABOUT===== */
 #about {
-  position: absolute;
+  position: relative;
   margin-top: 50px;
   display: flex;
   padding: 40px;
@@ -137,7 +141,7 @@ img:hover {
 .right-img {
   height: 700px;
   padding-top: 30px;
-  padding-left: 250px;
+  padding-left: 0;
 }
 .me h5 {
   font-size: 2rem;
@@ -420,5 +424,14 @@ h3 {
 
   .tech-card:hover {
     transform: translateY(-5px);
+  }
+}
+@media (max-width: 768px) {
+  #about {
+    padding: 20px;
+  }
+
+  .section-container {
+    padding: 70px 15px 20px;
   }
 }
