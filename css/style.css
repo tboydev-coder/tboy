@@ -8,8 +8,8 @@
 
 body {
   background-color: #110f14;
-  font-family: "Oswald", "san-serif";
-  width: 90%;
+  font-family: "Oswald", sans-serif;
+  padding: 0 5%;
   overflow-x: hidden;
 }
 /* =====HEADER===== */
@@ -126,7 +126,9 @@ img {
   background: rgba(255, 255, 255, 0.05); /* Slight glass effect */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   transition: all 1s ease;
 }
 img:hover {
